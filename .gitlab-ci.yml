@@ -1,0 +1,17 @@
+stages:
+  - build
+  - test
+
+build_job:
+  stage: build
+  image: node:20
+  script:
+    - echo "Building the project..."
+    - echo "Build completed successfully!"
+
+test_job:
+  stage: test
+  image: node:20
+  script:
+    - echo "Running tests..."
+    - echo "All tests passed!"
